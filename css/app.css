@@ -1,0 +1,192 @@
+/*main container start*/
+.css-101ncaf, [data-css-101ncaf] {
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    z-index: 1000;
+    right: -348.4px;
+    bottom: -327.2px;
+    visibility: hidden;
+    transition: visibility 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transition: visibility 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: visibility 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.css-1owq2hv, [data-css-1owq2hv] {
+    width: 800px;
+    height: 800px;
+    position: fixed;
+    z-index: 1000;
+    right: -348.4px;
+    bottom: -327.2px;
+    visibility: visible;
+    transition: visibility 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
+/*main container end*/
+
+/*button container start*/
+.css-ghzv10, [data-css-ghzv10] {
+    position: absolute;
+    top: 344px;
+    left: 344px;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    z-index: 100001;
+}
+.css-ghzv10:before, [data-css-ghzv10]:before {
+    content: " ";
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1),-webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transform: scale(0);
+    -webkit-transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1),-webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transform: scale(0);
+}
+
+.css-1oz4tqn, [data-css-1oz4tqn] {
+    position: absolute;
+    top: 344px;
+    left: 344px;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    z-index: 100001;
+}
+.css-1oz4tqn::before, [data-css-1oz4tqn]::before {
+    content: " ";
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s, opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s, -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+    transform: scale(1);
+}
+
+/*button container end*/
+
+
+
+/*slider container start*/
+.css-1f0dz3x, [data-css-1f0dz3x] {
+    background-color: #33691e;
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1),-webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    transform: scale(0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    -webkit-transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1),-webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1),opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transform: scale(0);
+}
+.css-5sa19j, [data-css-5sa19j] {
+    background-color: rgb(51, 105, 30);
+    border-radius: 50%;
+    opacity: 0.95;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s, opacity 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s, -webkit-transform 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+    transform: scale(1);
+}
+/*slider container end*/
+
+
+/* Image modal popup start */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* Image modal popup end */
