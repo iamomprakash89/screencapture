@@ -35,7 +35,12 @@ function openSlider()
 
 function screenCapture()
 {
-    html2canvas(document.querySelector("body")).then(canvas => {
+    html2canvas(document.querySelector("body"), {
+        allowTaint: true,
+        useCORS: true,
+        imageTimeout: 15000,
+        foreignObjectRendering: true
+    }).then(canvas => {
         /*var a = document.createElement("a");
         a.download = "screen.png";
         a.href = canvas.toDataURL("image/png");
